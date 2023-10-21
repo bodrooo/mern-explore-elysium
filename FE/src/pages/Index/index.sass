@@ -1,0 +1,85 @@
+main
+    width: 100%
+    div.intro
+        position: relative
+        display: grid
+        place-items: center
+        width: 100%
+        div.text
+            border-radius: 10px
+            backdrop-filter: blur(90px) saturate(90%)
+            padding: 20px 15px
+            position: absolute
+            color: rgb(var(--gray-color))
+            text-align: center
+            top: 250px
+            padding: 10px
+            width: 90%
+            h1
+                font-family: "KleeOne-Regular"
+                font-size: 2rem
+                margin-bottom: 2px
+            p
+                font-family: "KleeOne-SemiBold"
+                color: rgb(var(--gary-color))
+                font-weight: 900
+                margin-top: 2px
+        div.image
+            width: 100%
+            padding: 10px
+            border-radius: 20px
+            img
+                width: 100%
+                border-radius: inherit
+    div.heading
+        width: 100%
+        padding: 5px
+        display: flex
+        justify-content: center
+        span
+            --border: 3px solid rgb(var(--deep-dark-color))
+            padding: 10px
+            width: 80%
+            font-size: 2rem
+            text-align: center
+            display: block
+            border-top: var(--border)
+            border-bottom: var(--border)
+            font-family: "KleeOne-SemiBold"
+    div.recently-post
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 5px
+        gap: 20px
+
+@media screen and ( min-width: 600px )
+    main
+        div.intro
+            div.text
+                top: 100px
+                font-size: 2rem
+                p
+                    font-size: 1.5rem
+        div.recently-post
+            display: grid
+            padding: 20px 0
+            grid-template-columns: repeat(auto-fit, minmax(350px,400px))
+            place-content: center
+            place-items: center
+
+@media screen and (min-width: 992px)
+    main
+        div.intro
+            div.text
+                top: 100px
+                font-size: 2.4rem
+                p
+                    font-size: 1.7rem
+        div.recently-post
+            display: grid
+            padding: 20px 0
+            grid-template-columns: repeat(auto-fit, minmax(400px, 450px))
+            place-content: center
+            place-items: center
+            gap: 90px

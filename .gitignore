@@ -7,12 +7,12 @@
 **/pnpm-debug.log*
 **/lerna-debug.log*
 **/pnpm-lock.yaml
-**/
+
 **/node_modules
 **/dist
 **/dist-ssr
 **/*.local
-**/
+
 **/# Editor directories and files
 **/.vscode/*
 **/!.vscode/extensions.json
@@ -23,4 +23,3 @@
 **/*.njsproj
 **/*.sln
 **/*.sw?
-**/

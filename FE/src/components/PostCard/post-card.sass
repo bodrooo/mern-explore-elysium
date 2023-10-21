@@ -1,0 +1,53 @@
+div.post-card
+    --s: 300px
+    width: var(--s)
+    height: calc( var(--s) * 1.5 )
+    border-bottom: 1px solid rgb(var(--deep-dark-color))
+    a
+        text-decoration: none
+        color: inherit
+        div.image
+            width: 100%
+            border-radius: 10px
+            img
+                width: 100%
+                border-radius: inherit
+        div.text
+            div.info
+                display: flex
+                padding: 5px
+                time
+                    font-family: "NotoSansJP-SemiBold"
+                span
+                    font-family: "NotoSansJP-SemiBold"
+                    margin-left: 20px
+            p.title
+                margin-top: 10px
+                display: -webkit-box
+                max-width: 100%
+                -webkit-line-clamp: 2
+                -webkit-box-orient: vertical
+                overflow: hidden
+                font-family: "NotoSansJP-Regular"
+                font-size: 1.5rem
+                font-weight: 600
+                color: inherit
+                text-decoration: none
+            div.summary
+                display: -webkit-box
+                max-width: 100%
+                text-align: justify
+                overflow: hidden
+                display: -webkit-box
+                -webkit-line-clamp: 6
+                -webkit-box-orient: vertical
+                font-family: "NotoSansJP-SemiBold"
+                margin-top: 10px
+
+@media screen and ( min-width: 600px )
+    div.post-card
+        --s: 400px
+
+@media screen and (min-width: 992px)
+    div.post-card
+        --s: 500px
